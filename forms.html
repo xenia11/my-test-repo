@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="https://formspree.io/f/mknabakr" method="POST">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Full Name"
+                    name="full-name"
+                    required
+                />
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Age"
+                    name="age"
+                    min="0"
+                    max="110"
+                    required
+                />
+            </div>
+            <div>
+                <label for="favColour">Favourite colour:</label>
+                <select name="fav-colour" id="favColour">
+                    <option value="" hidden>Select a colour</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="other-colour">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    name="email"
+                    required
+                />
+            </div>
+            <div>
+                <label for="phone">Enter your phone number:</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone-number"
+                    pattern="04-[0-9]{4}-[0-9]{4}"
+                    required
+                />
+            </div>
+            <div>
+                <small>Format: 04-XXXX-XXXX</small>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="30"
+                    placeholder="Leave a message"
+                    required
+                ></textarea>
+            </div>
+            <br />
+            <div>
+                <input type="submit" value="Send" />
+            </div>
+        </form>
+    </body>
+</html>
