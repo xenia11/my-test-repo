@@ -1,0 +1,51 @@
+h1 ~ p {
+    color: lightslategrey;
+}
+
+h1 + p {
+    font-style: italic;
+    color: black;
+}
+
+h2 ~ p {
+    text-decoration: underline;
+    color: black;
+}
+
+h3 ~ p {
+    color: blue;
+    text-decoration: none;
+}
+
+h3 + p {
+    color: black;
+    text-decoration: none;
+}
+
+.second-section > div {
+    border: 2px solid black;
+    width: 500px;
+}
+.second-section > div > ol > li {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.second-section > div > h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-section > div > h5 {
+    color: red;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div ~ p {
+    color: brown;
+}
+div + p {
+    color: coral;
+    font-weight: bold;
+}
