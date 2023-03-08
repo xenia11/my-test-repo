@@ -14,3 +14,20 @@ a:active {
 a:hover {
     color: hotpink;
 }
+
+input {
+    background-color: lightblue;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+div:nth-of-type(2) > input {
+    background-color: white;
+}
+div:nth-of-type(3) > input {
+    border-color: red;
+}
+
+div:nth-last-of-type(1) > input:disabled {
+    background-color: white;
+}
