@@ -1,0 +1,113 @@
+body {
+    justify-content: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 600px;
+    /* height: 300px; */
+    margin: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+#section1 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+}
+
+#bluePara {
+    display: flex;
+    background-color: #add8e6;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#orangePara {
+    display: flex;
+    background-color: #ffa52d;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#pinkPara {
+    display: flex;
+    background-color: #ff69b4;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#redPara {
+    display: flex;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#greenPara {
+    display: flex;
+    background-color: lightgreen;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightpinkPara {
+    display: flex;
+    background-color: lightpink;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#greyPara {
+    display: flex;
+    background-color: lightgrey;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightsteelbluePara {
+    display: flex;
+    background-color: lightsteelblue;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightskybluePara {
+    display: flex;
+    background-color: lightskyblue;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,82 @@
+/* styling without flexbox */
+
+/* main {
+    text-align: justify;
+}
+
+main::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+.card {
+    display: inline-block;
+} */
+
+body {
+    justify-content: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 300px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 33.333333%;
+}
+
+#bluePara {
+    display: flex;
+    background-color: #add8e6;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#orangePara {
+    display: flex;
+    background-color: #ffa52d;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#pinkPara {
+    display: flex;
+    background-color: #ff69b4;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#redPara {
+    display: flex;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#greenPara {
+    display: flex;
+    background-color: lightgreen;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
