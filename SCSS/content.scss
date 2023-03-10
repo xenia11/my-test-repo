@@ -1,0 +1,27 @@
+@import "./theme";
+
+.document {
+    font-family: $main-text-font;
+    ​ &__border {
+        &--first-section {
+            border: 3px dashed green;
+        }
+        &--second-section {
+            border: $primary-box-border $secondary-color;
+        }
+    }
+    &__second-header--centered {
+        text-align: center;
+    }
+    &__paragraph {
+        &--blue {
+            color: $primary-color;
+        }
+        &--line-through {
+            text-decoration: line-through;
+        }
+        &--right-align {
+            text-align: right;
+        }
+    }
+}
