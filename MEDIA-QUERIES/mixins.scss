@@ -1,0 +1,19 @@
+@use "./breakpoints";
+
+@mixin german-flag {
+    @media only screen and (max-width: breakpoints.$german-screen) {
+        @content;
+    }
+}
+
+@mixin belgian-flag {
+    @media only screen and (min-width: (breakpoints.$german-screen+1px)) and (max-width: (breakpoints.$belgian-screen)) {
+        @content;
+    }
+}
+
+@mixin irish-flag {
+    @media only screen and (min-width: (breakpoints.$irish-screen)) {
+        @content;
+    }
+}

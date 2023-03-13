@@ -1,0 +1,55 @@
+@use "./breakpoints";
+@use "./mixins.scss";
+
+$black-color: black;
+$red-color: red;
+$yellow-color: yellow;
+
+%display-style {
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+.container {
+    @extend %display-style;
+    flex-direction: row;
+
+    @include mixins.belgian-flag {
+        flex-direction: column;
+    }
+
+    &__first-stripe {
+        @include mixins.german-flag {
+            background-color: $black-color;
+        }
+        @include mixins.belgian-flag {
+            background-color: $black-color;
+        }
+        @include mixins.irish-flag {
+            background-color: green;
+        }
+    }
+    &__second-stripe {
+        @include mixins.german-flag {
+            background-color: $red-color;
+        }
+        @include mixins.belgian-flag {
+            background-color: $yellow-color;
+        }
+        @include mixins.irish-flag {
+            background-color: white;
+        }
+    }
+    &__third-stripe {
+        @include mixins.german-flag {
+            background-color: $yellow-color;
+        }
+        @include mixins.belgian-flag {
+            background-color: $red-color;
+        }
+        @include mixins.irish-flag {
+            background-color: orange;
+        }
+    }
+}
