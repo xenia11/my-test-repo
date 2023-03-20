@@ -220,3 +220,18 @@ function lessThan100(num1, num2) {
 console.log(lessThan100(22, 15));
 console.log(lessThan100(83, 34));
 console.log(lessThan100(3, 77));
+
+const hobbies = ["cooking", "dancing", "boxing"];
+
+console.log(hobbies[0]);
+const firstHobby = hobbies.unshift();
+const newArrLenght = hobbies.length;
+
+hobbies.push("watching a movie");
+console.log(hobbies[hobbies.length - 1]);
+
+console.log(`My hobbies are: ${hobbies.join(", ")}`);
+
+const groceryList = ["eggs", "cheese", "bread", "broccolini", "garlic"];
+
+console.log(groceryList.join("|"));
