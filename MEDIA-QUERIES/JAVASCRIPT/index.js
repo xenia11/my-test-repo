@@ -235,3 +235,93 @@ console.log(`My hobbies are: ${hobbies.join(", ")}`);
 const groceryList = ["eggs", "cheese", "bread", "broccolini", "garlic"];
 
 console.log(groceryList.join("|"));
+
+function sum(n) {
+    let total = 0;
+    for (let i = 1; i <= n; i++) {
+        total += i;
+    }
+    console.log(total);
+}
+
+sum(10);
+
+let totalSum = 0;
+const sumTotal = (n) => {
+    totalSum = (n * (n + 1)) / 2;
+};
+
+sumTotal(10);
+
+const sumOfN2 = (n) => {
+    if (n === 0) return n;
+    return n + sumOfN2(n - 1);
+};
+
+sumOfN2(10);
+
+console.log(totalSum);
+
+function printEvens(n) {
+    const evens = Array.from({ length: n / 2 }, (_, i) => (i + 1) * 2);
+    console.log(evens.join(" "));
+}
+
+function printEvens(n) {
+    for (let i = 2; i <= n; i += 2) {
+        console.log(i);
+    }
+}
+console.log("hello:", printEvens(22));
+
+const shoppingList = [
+    "milk",
+    "waterlemon",
+    "eggs",
+    "soap",
+    "butter",
+    "apples",
+    "ïce-cream",
+];
+
+for (let i = 0; i < shoppingList.length; i++) {
+    console.log(`${i + 1}. ${shoppingList[i]}`);
+}
+
+const randomString = "aaaaaa";
+let capitalizedString = "";
+
+for (let i = 0; i < randomString.length; i++) {
+    if (i % 2 == 0) {
+        capitalizedString += randomString[i].toUpperCase();
+    } else {
+        capitalizedString += String.fromCharCode(
+            randomString[i].charCodeAt() + 1
+        );
+    }
+}
+
+console.log(capitalizedString);
+
+const randomName = "rachel";
+let nameWithoutVowels = "";
+
+for (let i = 0; i < randomName.length; i++) {
+    if (
+        randomName[i] == "a" ||
+        randomName[i] == "e" ||
+        randomName[i] == "i" ||
+        randomName[i] == "o" ||
+        randomName[i] == "u"
+    ) {
+        randomName[i + 1] == "l" ||
+        randomName[i + 1] == "r" ||
+        randomName[i + 1] == "m"
+            ? (nameWithoutVowels += randomName[i])
+            : "";
+    } else {
+        nameWithoutVowels += randomName[i];
+    }
+}
+
+console.log(nameWithoutVowels);
