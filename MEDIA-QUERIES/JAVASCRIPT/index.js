@@ -325,3 +325,48 @@ for (let i = 0; i < randomName.length; i++) {
 }
 
 console.log(nameWithoutVowels);
+
+let i = 3;
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+const arr = [];
+console.log(arr.length);
+
+const generateUniqueNumbers = () => {
+    const uniqueNumbers = [];
+    while (uniqueNumbers.length < 10) {
+        const randomNumber = Math.floor(Math.random() * 16);
+        if (!uniqueNumbers.includes(randomNumber)) {
+            uniqueNumbers.push(randomNumber);
+        }
+    }
+    return uniqueNumbers;
+    console.log(uniqueNumbers);
+};
+
+console.log(generateUniqueNumbers());
+
+const generateNumbers = (n, r, isUnique) => {
+    if (isUnique == "true" && n > r) {
+        throw new Error("Size of array cannot be greater than max value.");
+    }
+
+    const randomArray = [];
+
+    while (randomArray.length < n) {
+        const randomNumber = Math.floor(Math.random() * r);
+
+        if (isUnique && randomArray.includes(randomNumber)) {
+            continue; // skip adding the number if it already exists in the array
+        }
+
+        randomArray.push(randomNumber);
+    }
+
+    return randomArray;
+};
+
+console.log(generateNumbers(10, 8, false));
