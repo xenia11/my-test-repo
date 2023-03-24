@@ -360,7 +360,7 @@ const generateNumbers = (n, r, isUnique) => {
         const randomNumber = Math.floor(Math.random() * r);
 
         if (isUnique && randomArray.includes(randomNumber)) {
-            continue; // skip adding the number if it already exists in the array
+            continue;
         }
 
         randomArray.push(randomNumber);
