@@ -151,6 +151,9 @@ const movie = {
 
 const getTitleAndGenre = (obj) => {
     const { title, genre } = obj;
+
+    console.log(typeof title);
+
     const genres = genre;
     const movieTitle = title;
     return `The genres of the ${movieTitle} are: ${genres.map(
@@ -284,3 +287,53 @@ const getTodayLow = (obj) => {
 };
 
 console.log(getTodayLow(forecast));
+
+const ob = {
+    id: "https://docs.atlassian.com/jira/REST/schema/error-collection#",
+    title: "Error Collection",
+    type: "string",
+    properties: {
+        errorMessages: {
+            type: "array",
+            items: {
+                type: "string",
+            },
+        },
+        errors: {
+            type: "object",
+            patternProperties: {
+                ".+": {
+                    type: "string",
+                },
+            },
+            additionalProperties: false,
+        },
+        status: {
+            type: "integer",
+        },
+    },
+    additionalProperties: false,
+};
+
+ob.newob = "test";
+
+console.log(ob);
+
+const newob = (objected) => {
+    const p = Object.entries(objected);
+    const t = p.filter((x) => x[0] === "type" && x[1] === "string"); // type:"object"
+
+    // daj mi sve ciji je type x[1] == object
+    const childLevelOne = p.filter((x) => typeof x[1] == "object"); // type:"object"
+    if (childLevelOne.length == 0) return;
+
+    t.push(childLevelOne.filter((x) => x[0] === "type" && x[1] === "string"));
+
+    const childLevelTwo = childLevelOne.filter((x) => typeof x[1] == "object");
+    if (childLevelTwo.length == 0) return;
+
+    t.push(childLevelTwo.filter((x) => x[0] === "type" && x[1] === "string"));
+    console.log(t);
+};
+
+newob(ob);
